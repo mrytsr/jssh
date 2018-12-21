@@ -1,16 +1,22 @@
 # Jssh
 
-![截图](https://snag.gy/hws0d8.jpg)
-
 ## Usage
 
-    jssh {host}
+    
+1. 把下面的脚本复制到 ~/jssh， 然后chmod +x ~/jssh
+1. 在需要ssh登陆的服务器上，安装screen
+1. 用jssh登陆
 
-- {host}事先在.ssh/config中配置完成
-- 推荐使用ssh-agent
-- ssh-agent 使用指南 - 肆意的青春 - SegmentFault 思否 -https://segmentfault.com/a/1190000002449006
-- SSH Config 那些你所知道和不知道的事 | Deepzz's Blog - https://deepzz.com/post/how-to-setup-ssh-config.html
+    jssh user@<yourhost>
 
+1. 如果在.ssh/config中事先配置好了host，那么登陆过程可以简化为，参见 
+    ![https://deepzz.com/post/how-to-setup-ssh-config.html](SSH Config 那些你所知道和不知道的事 | Deepzz's Blog)
+
+    jssh <host>
+
+1. 推荐使用ssh-agent，![https://segmentfault.com/a/1190000002449006]ssh-agent 使用指南 - 肆意的青春 - SegmentFault 思否
+
+![截图](https://snag.gy/hws0d8.jpg)
 
 ```
 #!/bin/bash
