@@ -7,12 +7,12 @@
 1. 在需要ssh登陆的服务器上，安装screen
 1. 用jssh登陆
 
-    jssh user@{yourhostname}
+       jssh user@{yourhostname}
 
 1. 如果在.ssh/config中事先配置好了host，那么登陆过程可以简化为，参见 
     [SSH Config 那些你所知道和不知道的事 | Deepzz's Blog](https://deepzz.com/post/how-to-setup-ssh-config.html)
 
-    jssh {host}
+       jssh {host}
 
 1. 推荐使用ssh-agent，[ssh-agent 使用指南 - 肆意的青春 - SegmentFault 思否](https://segmentfault.com/a/1190000002449006)
 
