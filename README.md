@@ -24,6 +24,8 @@
 source <(ssh-agent) && ssh-add ~/.ssh/id_rsa
 ssh -o connecttimeout=1 -At ${@} "$(cat <<'EOF'
 echo '
+defencoding UTF-8
+encoding UTF-8 UTF-8
 termcapinfo xterm* ti@:te@ 
 escape ^Ss 
 altscreen on 
